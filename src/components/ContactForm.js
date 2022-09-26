@@ -33,9 +33,9 @@ const ContactForm = ({propsContactsSubmit}) => {
 
     return (
       <div style={{display: 'flex', flexDirection: 'column', width: "50%"}}>
-        <form onSubmit={localSubmit} style={{marginLeft: '7em'}}>
+        <form onSubmit={localSubmit}>
           <Box components="form" autoComplete="off" sx={{
-            '& .MuiTextField-root': { width: 400, bgcolor: 'background.paper', marginBottom: 1 }, backgroundColor: '#E5E3DE', width: 400, padding: '1em', borderRadius: '1%'
+            '& .MuiTextField-root': { width: 400, bgcolor: 'background.paper', marginBottom: 1 }, backgroundColor: '#E5E3DE', width: 400, padding: '1em', borderRadius: '1%', margin: 'auto'
           }}
           >
             <TextField value={inputContact.name} onChange={e => { setinputContact({...inputContact, name: e.target.value}) }} required id="name" label="Name" paddingBottom="1em"/>

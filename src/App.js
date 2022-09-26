@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Contact from './components/Contact'
 import ContactForm from './components/ContactForm';
-import {useState} from 'react';
+import React, {useState} from 'react';
 
 // Uncomment untuk memuat daftar kontak
 import contactsJSON from './data/contacts.json';
